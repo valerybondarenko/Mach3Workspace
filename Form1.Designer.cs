@@ -31,13 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.table_1_button = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.table_2_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.настройкиСтанкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.рабочийКаталогToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +60,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(118, 92);
+            this.label3.Location = new System.Drawing.Point(118, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(259, 18);
             this.label3.TabIndex = 1;
@@ -63,23 +69,24 @@
             // table_1_button
             // 
             this.table_1_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.table_1_button.Location = new System.Drawing.Point(20, 63);
+            this.table_1_button.Location = new System.Drawing.Point(20, 55);
             this.table_1_button.Name = "table_1_button";
-            this.table_1_button.Size = new System.Drawing.Size(75, 23);
+            this.table_1_button.Size = new System.Drawing.Size(75, 31);
             this.table_1_button.TabIndex = 2;
             this.table_1_button.Text = "Стол 1";
             this.table_1_button.UseVisualStyleBackColor = true;
             this.table_1_button.Click += new System.EventHandler(this.table_1_button_Click);
             // 
-            // button2
+            // table_2_button
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(20, 92);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Стол 2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.table_2_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.table_2_button.Location = new System.Drawing.Point(20, 92);
+            this.table_2_button.Name = "table_2_button";
+            this.table_2_button.Size = new System.Drawing.Size(75, 31);
+            this.table_2_button.TabIndex = 3;
+            this.table_2_button.Text = "Стол 2";
+            this.table_2_button.UseVisualStyleBackColor = true;
+            this.table_2_button.Click += new System.EventHandler(this.table_2_button_Click);
             // 
             // label4
             // 
@@ -95,9 +102,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(12, 700);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(12, 697);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 23);
+            this.button3.Size = new System.Drawing.Size(109, 26);
             this.button3.TabIndex = 5;
             this.button3.Text = "Подключить";
             this.button3.UseVisualStyleBackColor = true;
@@ -106,42 +114,90 @@
             // 
             this.panel1.Controls.Add(this.richTextBox2);
             this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 121);
+            this.panel1.Location = new System.Drawing.Point(0, 134);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 573);
+            this.panel1.Size = new System.Drawing.Size(661, 557);
             this.panel1.TabIndex = 6;
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(310, 567);
+            this.richTextBox1.Size = new System.Drawing.Size(310, 564);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
             // richTextBox2
             // 
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox2.Location = new System.Drawing.Point(319, 3);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(339, 567);
+            this.richTextBox2.Size = new System.Drawing.Size(339, 564);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(147, 702);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(132, 18);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Нет подключения";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(661, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.настройкиСтанкаToolStripMenuItem,
+            this.рабочийКаталогToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
+            this.toolStripMenuItem1.Text = "Настройки";
+            // 
+            // настройкиСтанкаToolStripMenuItem
+            // 
+            this.настройкиСтанкаToolStripMenuItem.Name = "настройкиСтанкаToolStripMenuItem";
+            this.настройкиСтанкаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.настройкиСтанкаToolStripMenuItem.Text = "Настройки станка";
+            // 
+            // рабочийКаталогToolStripMenuItem
+            // 
+            this.рабочийКаталогToolStripMenuItem.Name = "рабочийКаталогToolStripMenuItem";
+            this.рабочийКаталогToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.рабочийКаталогToolStripMenuItem.Text = "Рабочий каталог";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 735);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.table_2_button);
             this.Controls.Add(this.table_1_button);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Mach3 Worklist";
             this.panel1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,12 +208,17 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button table_1_button;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button table_2_button;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem настройкиСтанкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem рабочийКаталогToolStripMenuItem;
     }
 }
 

@@ -21,5 +21,10 @@ namespace Mach3Control
         {
 
         }
+
+        private void table_2_button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
