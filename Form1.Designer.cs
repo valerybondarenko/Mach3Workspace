@@ -1,4 +1,6 @@
-﻿namespace Mach3Control
+﻿using Mach4;
+
+namespace Mach3Control
 {
     partial class Form1
     {
@@ -6,7 +8,8 @@
         /// Обязательная переменная конструктора.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+        private IMach4 _mach;
+        private IMyScriptObject _mInst;
         /// <summary>
         /// Освободить все используемые ресурсы.
         /// </summary>
@@ -111,6 +114,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Подключить";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel1
             // 
@@ -171,14 +175,14 @@
             // MachineOptionsMenuItem
             // 
             this.MachineOptionsMenuItem.Name = "MachineOptionsMenuItem";
-            this.MachineOptionsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.MachineOptionsMenuItem.Size = new System.Drawing.Size(173, 22);
             this.MachineOptionsMenuItem.Text = "Настройки станка";
             this.MachineOptionsMenuItem.Click += new System.EventHandler(this.MachineOptionsMenuItem_Click);
             // 
             // WorkFolderMenuItem
             // 
             this.WorkFolderMenuItem.Name = "WorkFolderMenuItem";
-            this.WorkFolderMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.WorkFolderMenuItem.Size = new System.Drawing.Size(173, 22);
             this.WorkFolderMenuItem.Text = "Рабочий каталог";
             this.WorkFolderMenuItem.Click += new System.EventHandler(this.WorkFolderMenuItem_Click);
             // 

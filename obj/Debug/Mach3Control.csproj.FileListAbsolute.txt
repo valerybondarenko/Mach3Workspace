@@ -18,3 +18,5 @@ C:\Users\Admin\source\repos\Mach3Workspace\obj\Debug\Mach3Control.pdb
 C:\Users\Admin\source\repos\Mach3Workspace\bin\Debug\Mach3Control.exe.config
 C:\Users\Admin\source\repos\Mach3Workspace\bin\Debug\Mach3Control.exe
 C:\Users\Admin\source\repos\Mach3Workspace\bin\Debug\Mach3Control.pdb
+C:\Users\Admin\source\repos\Mach3Workspace\obj\Debug\Interop.Mach4.dll
+C:\Users\Admin\source\repos\Mach3Workspace\obj\Debug\Mach3Control.csproj.ResolveComReference.cache
