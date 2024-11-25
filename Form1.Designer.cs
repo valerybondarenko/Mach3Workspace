@@ -35,13 +35,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.настройкиСтанкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рабочийКаталогToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MachineOptionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.WorkFolderMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -119,15 +121,6 @@
             this.panel1.Size = new System.Drawing.Size(661, 557);
             this.panel1.TabIndex = 6;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(310, 564);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            // 
             // richTextBox2
             // 
             this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -136,6 +129,15 @@
             this.richTextBox2.Size = new System.Drawing.Size(339, 564);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(310, 564);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
             // 
             // label5
             // 
@@ -160,23 +162,29 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.настройкиСтанкаToolStripMenuItem,
-            this.рабочийКаталогToolStripMenuItem});
+            this.MachineOptionsMenuItem,
+            this.WorkFolderMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
             this.toolStripMenuItem1.Text = "Настройки";
             // 
-            // настройкиСтанкаToolStripMenuItem
+            // MachineOptionsMenuItem
             // 
-            this.настройкиСтанкаToolStripMenuItem.Name = "настройкиСтанкаToolStripMenuItem";
-            this.настройкиСтанкаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.настройкиСтанкаToolStripMenuItem.Text = "Настройки станка";
+            this.MachineOptionsMenuItem.Name = "MachineOptionsMenuItem";
+            this.MachineOptionsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.MachineOptionsMenuItem.Text = "Настройки станка";
+            this.MachineOptionsMenuItem.Click += new System.EventHandler(this.MachineOptionsMenuItem_Click);
             // 
-            // рабочийКаталогToolStripMenuItem
+            // WorkFolderMenuItem
             // 
-            this.рабочийКаталогToolStripMenuItem.Name = "рабочийКаталогToolStripMenuItem";
-            this.рабочийКаталогToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.рабочийКаталогToolStripMenuItem.Text = "Рабочий каталог";
+            this.WorkFolderMenuItem.Name = "WorkFolderMenuItem";
+            this.WorkFolderMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.WorkFolderMenuItem.Text = "Рабочий каталог";
+            this.WorkFolderMenuItem.Click += new System.EventHandler(this.WorkFolderMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -217,8 +225,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem настройкиСтанкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рабочийКаталогToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MachineOptionsMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem WorkFolderMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
