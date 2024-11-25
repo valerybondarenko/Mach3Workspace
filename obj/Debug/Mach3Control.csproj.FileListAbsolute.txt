@@ -1,0 +1,10 @@
+C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.csproj.AssemblyReference.cache
+C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.Form1.resources
+C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.Properties.Resources.resources
+C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.csproj.GenerateResource.cache
+C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.csproj.CoreCompileInputs.cache
+C:\Users\green\source\repos\Mach3Control\Mach3Control\bin\Debug\Mach3Control.exe.config
+C:\Users\green\source\repos\Mach3Control\Mach3Control\bin\Debug\Mach3Control.exe
+C:\Users\green\source\repos\Mach3Control\Mach3Control\bin\Debug\Mach3Control.pdb
+C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.exe
+C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.pdb
