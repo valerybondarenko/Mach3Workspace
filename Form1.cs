@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Mach4;
+using System.IO;
+using System.Security.Cryptography;
+using System.Xml.Linq;
 
 namespace Mach3Control
 {
@@ -44,6 +47,19 @@ namespace Mach3Control
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 label1.Text = openFileDialog1.FileName;
+                using (StreamReader read = new StreamReader(openFileDialog1.FileName))
+                {
+                    while (true)
+                    {
+                        // Read the text from the file
+                        string line = read.ReadLine();
+                        if (line == null)
+                            break;
+                        richTextBox1.AppendText(line);
+                        richTextBox1.AppendText("\n");
+                    }
+                }
+
             }
 
         }
@@ -68,6 +84,7 @@ namespace Mach3Control
             {
                 folderName = folderBrowserDialog1.SelectedPath;
                 
+                
             }
         }
 
@@ -79,7 +96,8 @@ namespace Mach3Control
             }
             else
             {
-                _mInst.LoadFile(label3.Text);
+                _mInst.LoadFile(label1.Text);
+
                // _mInst.DeActivateSignal(Convert.ToInt16(this.comboBox1.Text));
             }
         }
