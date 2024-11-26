@@ -12,6 +12,7 @@ using Mach4;
 using System.IO;
 using System.Security.Cryptography;
 using System.Xml.Linq;
+using Mach3Control.Properties;
 
 namespace Mach3Control
 {
@@ -44,6 +45,7 @@ namespace Mach3Control
         }
         private void table_1_button_Click(object sender, EventArgs e)
         {
+            openFileDialog1.InitialDirectory = folderName;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 label1.Text = openFileDialog1.FileName;
@@ -59,13 +61,12 @@ namespace Mach3Control
                         richTextBox1.AppendText("\n");
                     }
                 }
-
             }
-
         }
 
         private void table_2_button_Click(object sender, EventArgs e)
         {
+            openFileDialog1.InitialDirectory=folderName;
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 label3.Text = openFileDialog1.FileName;
@@ -74,17 +75,18 @@ namespace Mach3Control
 
         private void MachineOptionsMenuItem_Click(object sender, EventArgs e)
         {
-            label5.Text = folderName;
+            
         }
 
         private void WorkFolderMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult result = folderBrowserDialog1.ShowDialog();
+            folderBrowserDialog1.SelectedPath = folderName; 
             if (result == DialogResult.OK)
             {
                 folderName = folderBrowserDialog1.SelectedPath;
-                
-                
+                Settings.Default["WorkFolder"] = folderName;
+                Settings.Default.Save();
             }
         }
 
@@ -100,6 +102,27 @@ namespace Mach3Control
 
                // _mInst.DeActivateSignal(Convert.ToInt16(this.comboBox1.Text));
             }
+        }
+
+        private void inputStateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outputControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            folderName = Settings.Default.WorkFolder;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Settings.Default["WorkFolder"] = folderName;
+            Settings.Default.Save();
         }
     }
 }
