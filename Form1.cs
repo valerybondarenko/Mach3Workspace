@@ -14,6 +14,7 @@ using System.Security.Cryptography;
 using System.Xml.Linq;
 using Mach3Control.Properties;
 
+
 namespace Mach3Control
 {
     public partial class Form1 : Form
@@ -107,12 +108,14 @@ namespace Mach3Control
         private void inputStateToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+
+            Form2 form2 = new Form2();
+            form2.Show();
+            
+
         }
 
-        private void outputControlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

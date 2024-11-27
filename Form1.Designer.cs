@@ -46,11 +46,10 @@ namespace Mach3Control
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.MachineOptionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.WorkFolderMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.controlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inputStateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.outputControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -181,26 +180,21 @@ namespace Mach3Control
             // MachineOptionsMenuItem
             // 
             this.MachineOptionsMenuItem.Name = "MachineOptionsMenuItem";
-            this.MachineOptionsMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.MachineOptionsMenuItem.Size = new System.Drawing.Size(173, 22);
             this.MachineOptionsMenuItem.Text = "Настройки станка";
             this.MachineOptionsMenuItem.Click += new System.EventHandler(this.MachineOptionsMenuItem_Click);
             // 
             // WorkFolderMenuItem
             // 
             this.WorkFolderMenuItem.Name = "WorkFolderMenuItem";
-            this.WorkFolderMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.WorkFolderMenuItem.Size = new System.Drawing.Size(173, 22);
             this.WorkFolderMenuItem.Text = "Рабочий каталог";
             this.WorkFolderMenuItem.Click += new System.EventHandler(this.WorkFolderMenuItem_Click);
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // controlToolStripMenuItem
             // 
             this.controlToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inputStateToolStripMenuItem,
-            this.outputControlToolStripMenuItem});
+            this.inputStateToolStripMenuItem});
             this.controlToolStripMenuItem.Name = "controlToolStripMenuItem";
             this.controlToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.controlToolStripMenuItem.Text = "Управление";
@@ -209,15 +203,12 @@ namespace Mach3Control
             // 
             this.inputStateToolStripMenuItem.Name = "inputStateToolStripMenuItem";
             this.inputStateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.inputStateToolStripMenuItem.Text = "Входы";
+            this.inputStateToolStripMenuItem.Text = "Входы / Выходы";
             this.inputStateToolStripMenuItem.Click += new System.EventHandler(this.inputStateToolStripMenuItem_Click);
             // 
-            // outputControlToolStripMenuItem
+            // openFileDialog1
             // 
-            this.outputControlToolStripMenuItem.Name = "outputControlToolStripMenuItem";
-            this.outputControlToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.outputControlToolStripMenuItem.Text = "Выходы";
-            this.outputControlToolStripMenuItem.Click += new System.EventHandler(this.outputControlToolStripMenuItem_Click);
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -266,7 +257,6 @@ namespace Mach3Control
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ToolStripMenuItem controlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inputStateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem outputControlToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
     }
 }
