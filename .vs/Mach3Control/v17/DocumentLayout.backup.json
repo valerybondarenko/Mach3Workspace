@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|c:\\users\\admin\\source\\repos\\mach3workspace\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BB4AD586-ED00-4023-9C02-886FECDC0C2D}|Mach3Control.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,31 +34,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T20:50:33.142Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Form1.Designer.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form1.Designer.cs",
               "RelativeToolTip": "Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwPIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T20:09:47.559Z"
+              "WhenOpened": "2024-11-27T20:09:47.559Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form2.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.Designer.cs",
               "RelativeDocumentMoniker": "Form2.Designer.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.Designer.cs",
               "RelativeToolTip": "Form2.Designer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAcwKYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T20:09:03.776Z"
+              "WhenOpened": "2024-11-27T20:09:03.776Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -66,9 +80,9 @@
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.cs",
-              "RelativeToolTip": "Form2.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAYwCwAAAA0AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.cs*",
+              "RelativeToolTip": "Form2.cs*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T20:06:44.045Z",
               "EditorCaption": ""
@@ -76,36 +90,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:43:18.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-25T17:51:54.527Z"
+              "WhenOpened": "2024-11-25T17:51:54.527Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Mach3Workspace\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAkwCsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwHEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T20:06:20.67Z"
+              "WhenOpened": "2024-11-27T20:06:20.67Z",
+              "EditorCaption": ""
             }
           ]
         }

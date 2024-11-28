@@ -110,6 +110,7 @@ namespace Mach3Control
 
 
             Form2 form2 = new Form2();
+            form2.MachInst = _mInst;
             form2.Show();
             
 
