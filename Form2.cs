@@ -33,16 +33,25 @@ namespace Mach3Control
             }
 
         }
+        private void setOutput(short output) {
+            _mInst.ActivateSignal(output);
+        }
+        private void resetOutput(short output)
+        {
+            _mInst.DeActivateSignal(output);
+        }
 
         private void lbl_IN1_Click(object sender, EventArgs e)
         {
             if (lbl_IN1.BackColor == Color.LawnGreen)
             {
                 lbl_IN1.BackColor = Color.Transparent;
+                this.resetOutput(7);
             }
             else
             {
                 lbl_IN1.BackColor = Color.LawnGreen;
+                this.setOutput(7);
             }
         }
 
@@ -51,10 +60,12 @@ namespace Mach3Control
             if (lbl_IN2.BackColor == Color.LawnGreen)
             {
                 lbl_IN2.BackColor = Color.Transparent;
+                this.resetOutput(8);
             }
             else
             {
                 lbl_IN2.BackColor = Color.LawnGreen;
+                this.setOutput(8);
             }
         }
     }
