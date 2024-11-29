@@ -24,6 +24,7 @@ namespace Mach3Control
         {
             InitializeComponent();
             GetMachInstance(null);
+            isMachRun=false;
         }
 
         private string folderName;
@@ -93,6 +94,7 @@ namespace Mach3Control
 
         private void Button3_Click(object sender, EventArgs e)
         {
+            lblMSG.Text = "Подключено " + (System.String) _mInst.GetActiveProfileName();
             timer1.Interval = 10;
             timer1.Start();
         }
@@ -123,7 +125,22 @@ namespace Mach3Control
         {
             if (_mInst != null)
             {
-                
+                if (_mInst.GetOEMLed(821))
+                {
+                    if (isMachRun) { return;}
+                    _mInst.LoadRun(label1.Text);
+                    isMachRun = true;
+                }
+                if (_mInst.GetOEMLed(822))
+                {
+                    if (isMachRun) { return;}
+                    _mInst.LoadRun(label3.Text);
+                    isMachRun = true;
+                }
+                if (!_mInst.GetOEMLed(804))
+                {
+                    isMachRun = false;
+                }
             }
         }
     }

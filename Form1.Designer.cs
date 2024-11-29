@@ -10,6 +10,8 @@ namespace Mach3Control
         private System.ComponentModel.IContainer components = null;
         private IMach4 _mach;
         private IMyScriptObject _mInst;
+        private bool isMachRun;
+       // private bool isTable1;
         /// <summary>
         /// Освободить все используемые ресурсы.
         /// </summary>
