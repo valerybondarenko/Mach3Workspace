@@ -41,7 +41,7 @@ namespace Mach3Control
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblMSG = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.MachineOptionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -118,7 +118,7 @@ namespace Mach3Control
             this.button3.TabIndex = 5;
             this.button3.Text = "Подключить";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // panel1
             // 
@@ -147,15 +147,15 @@ namespace Mach3Control
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // label5
+            // lblMSG
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(147, 702);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 18);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Нет подключения";
+            this.lblMSG.AutoSize = true;
+            this.lblMSG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblMSG.Location = new System.Drawing.Point(147, 702);
+            this.lblMSG.Name = "lblMSG";
+            this.lblMSG.Size = new System.Drawing.Size(132, 18);
+            this.lblMSG.TabIndex = 7;
+            this.lblMSG.Text = "Нет подключения";
             // 
             // menuStrip1
             // 
@@ -202,7 +202,7 @@ namespace Mach3Control
             // inputStateToolStripMenuItem
             // 
             this.inputStateToolStripMenuItem.Name = "inputStateToolStripMenuItem";
-            this.inputStateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inputStateToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.inputStateToolStripMenuItem.Text = "Входы / Выходы";
             this.inputStateToolStripMenuItem.Click += new System.EventHandler(this.inputStateToolStripMenuItem_Click);
             // 
@@ -210,12 +210,16 @@ namespace Mach3Control
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 735);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblMSG);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
@@ -248,7 +252,7 @@ namespace Mach3Control
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblMSG;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem MachineOptionsMenuItem;
@@ -258,6 +262,7 @@ namespace Mach3Control
         private System.Windows.Forms.ToolStripMenuItem controlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inputStateToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
+        
     }
 }
 

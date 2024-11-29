@@ -91,28 +91,18 @@ namespace Mach3Control
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
-            if (_mInst == null)
-            {
-                return;
-            }
-            else
-            {
-                _mInst.LoadFile(label1.Text);
-
-               // _mInst.DeActivateSignal(Convert.ToInt16(this.comboBox1.Text));
-            }
+            timer1.Interval = 10;
+            timer1.Start();
         }
 
         private void inputStateToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-
             Form2 form2 = new Form2();
             form2.MachInst = _mInst;
             form2.Show();
-            
 
         }
 
@@ -127,6 +117,14 @@ namespace Mach3Control
         {
             Settings.Default["WorkFolder"] = folderName;
             Settings.Default.Save();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (_mInst != null)
+            {
+                
+            }
         }
     }
 }

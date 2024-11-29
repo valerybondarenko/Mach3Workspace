@@ -20,6 +20,17 @@ namespace Mach3Control
         {
             InitializeComponent();
         }
+        public void ledStates()
+        {
+            if (MachInst.GetOEMLed(821))
+            {
+                lblIN_1.BackColor = Color.LawnGreen;
+            }
+            else 
+            {
+                lblIN_1.BackColor = Color.Transparent;
+            }
+        }
          private void togleLED(object sender, EventArgs e)
         {
             Label label = (sender as Label);
