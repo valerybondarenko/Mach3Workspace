@@ -92,21 +92,18 @@ namespace Mach3Control
             }
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void BtnConnect(object sender, EventArgs e)
         {
+            GetMachInstance(null);
+            if (_mInst == null) {
+                lblMSG.Text = "Нет подключения к Mach3";
+                return; }
             lblMSG.Text = "Подключено " + (System.String) _mInst.GetActiveProfileName();
             timer1.Interval = 10;
             timer1.Start();
         }
 
-        private void inputStateToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-            Form2 form2 = new Form2();
-            form2.MachInst = _mInst;
-            form2.Show();
-
-        }
 
 
 

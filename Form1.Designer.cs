@@ -11,7 +11,7 @@ namespace Mach3Control
         private IMach4 _mach;
         private IMyScriptObject _mInst;
         private bool isMachRun;
-       // private bool isTable1;
+       
         /// <summary>
         /// Освободить все используемые ресурсы.
         /// </summary>
@@ -39,7 +39,8 @@ namespace Mach3Control
             this.table_1_button = new System.Windows.Forms.Button();
             this.table_2_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            System.Windows.Forms.Button button = new System.Windows.Forms.Button();
+            this.btnConnect = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -111,16 +112,16 @@ namespace Mach3Control
             this.label4.TabIndex = 4;
             this.label4.Text = "Mach3Control";
             // 
-            // button3
+            // btnConnect
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(12, 697);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 26);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Подключить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnConnect.Location = new System.Drawing.Point(12, 697);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(109, 26);
+            this.btnConnect.TabIndex = 5;
+            this.btnConnect.Text = "Подключить";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.BtnConnect);
             // 
             // panel1
             // 
@@ -155,9 +156,9 @@ namespace Mach3Control
             this.lblMSG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMSG.Location = new System.Drawing.Point(147, 702);
             this.lblMSG.Name = "lblMSG";
-            this.lblMSG.Size = new System.Drawing.Size(132, 18);
+            this.lblMSG.Size = new System.Drawing.Size(193, 18);
             this.lblMSG.TabIndex = 7;
-            this.lblMSG.Text = "Нет подключения";
+            this.lblMSG.Text = "Нет подключения к Mach3";
             // 
             // menuStrip1
             // 
@@ -204,9 +205,8 @@ namespace Mach3Control
             // inputStateToolStripMenuItem
             // 
             this.inputStateToolStripMenuItem.Name = "inputStateToolStripMenuItem";
-            this.inputStateToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.inputStateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inputStateToolStripMenuItem.Text = "Входы / Выходы";
-            this.inputStateToolStripMenuItem.Click += new System.EventHandler(this.inputStateToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -223,7 +223,7 @@ namespace Mach3Control
             this.ClientSize = new System.Drawing.Size(661, 735);
             this.Controls.Add(this.lblMSG);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.table_2_button);
             this.Controls.Add(this.table_1_button);
@@ -250,7 +250,7 @@ namespace Mach3Control
         private System.Windows.Forms.Button table_1_button;
         private System.Windows.Forms.Button table_2_button;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
