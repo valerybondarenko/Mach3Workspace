@@ -94,13 +94,27 @@ namespace Mach3Control
 
         private void BtnConnect(object sender, EventArgs e)
         {
-            GetMachInstance(null);
-            if (_mInst == null) {
+            if (btnConnect.Text == "Отключить")
+            { 
+                timer1.Stop();
                 lblMSG.Text = "Нет подключения к Mach3";
-                return; }
-            lblMSG.Text = "Подключено " + (System.String) _mInst.GetActiveProfileName();
-            timer1.Interval = 10;
-            timer1.Start();
+                btnConnect.Text = "Подключить";
+                return;
+            }
+            else 
+            {
+                GetMachInstance(null);
+                if (_mInst == null)
+                {
+                    lblMSG.Text = "Нет подключения к Mach3";
+                    return;
+                }
+                lblMSG.Text = "Подключено " + (System.String)_mInst.GetActiveProfileName();
+                timer1.Interval = 10;
+                timer1.Start();
+                btnConnect.Text = "Отключить";
+            }
+            
         }
 
 
