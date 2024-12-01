@@ -151,7 +151,7 @@ namespace Mach3Control
                     }
                     else 
                     {
-                        if (!isMachRun)
+                        if (!isMachRun&&isFerstReady)
                         {
                             _mInst.LoadRun("C:\\Mach3\\GCode\\tableA.tap");
                             isFerstSelected = false;
@@ -159,7 +159,8 @@ namespace Mach3Control
                             isMachRun = true;
                             return;
                         }
-                        isFerstReady = true;
+                        timer2.Interval = 3000;
+                        timer2.Start();
                     }
                 }
 
@@ -171,7 +172,7 @@ namespace Mach3Control
                     }
                     else
                     {
-                        if (!isMachRun) 
+                        if (!isMachRun&&isSecondReady) 
                         { 
                             _mInst.LoadRun("C:\\Mach3\\GCode\\tableB.tap");
                             isSecondSelected=false;
@@ -179,7 +180,8 @@ namespace Mach3Control
                             isMachRun=true;
                             return;
                         }
-                        isSecondReady = true;
+                        timer3.Interval = 3000;
+                       timer3.Start();
                     }
                 }
 
@@ -207,6 +209,18 @@ namespace Mach3Control
                     isMachRun = false;
                 }
             }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            isFerstReady = true;
+            timer2.Stop();
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            isSecondReady = true;
+            timer3.Stop();
         }
     }
 }

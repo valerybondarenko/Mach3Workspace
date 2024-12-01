@@ -46,7 +46,7 @@ namespace Mach3Control
             this.table_1_button = new System.Windows.Forms.Button();
             this.table_2_button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            System.Windows.Forms.Button button = new System.Windows.Forms.Button();
+            this.button = new System.Windows.Forms.Button();
             this.btnConnect = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
@@ -61,6 +61,8 @@ namespace Mach3Control
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -118,6 +120,13 @@ namespace Mach3Control
             this.label4.Size = new System.Drawing.Size(147, 26);
             this.label4.TabIndex = 4;
             this.label4.Text = "Mach3Control";
+            // 
+            // button
+            // 
+            this.button.Location = new System.Drawing.Point(0, 0);
+            this.button.Name = "button";
+            this.button.Size = new System.Drawing.Size(75, 23);
+            this.button.TabIndex = 0;
             // 
             // btnConnect
             // 
@@ -212,7 +221,7 @@ namespace Mach3Control
             // inputStateToolStripMenuItem
             // 
             this.inputStateToolStripMenuItem.Name = "inputStateToolStripMenuItem";
-            this.inputStateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inputStateToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.inputStateToolStripMenuItem.Text = "Входы / Выходы";
             // 
             // openFileDialog1
@@ -222,6 +231,14 @@ namespace Mach3Control
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // Form1
             // 
@@ -271,7 +288,9 @@ namespace Mach3Control
         private System.Windows.Forms.ToolStripMenuItem controlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inputStateToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
-        
+        private System.Windows.Forms.Button button;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 
