@@ -25,6 +25,7 @@ namespace Mach3Control
             InitializeComponent();
             GetMachInstance(null);
             isMachRun=false;
+            isConnected=false;
         }
 
         private string folderName;
@@ -94,11 +95,14 @@ namespace Mach3Control
 
         private void BtnConnect(object sender, EventArgs e)
         {
-            if (btnConnect.Text == "Отключить")
+            if (isConnected)
             { 
                 timer1.Stop();
                 lblMSG.Text = "Нет подключения к Mach3";
                 btnConnect.Text = "Подключить";
+                isConnected = false;
+                _mInst.DeActivateSignal(7);
+                _mInst.DeActivateSignal(8);
                 return;
             }
             else 
@@ -113,6 +117,9 @@ namespace Mach3Control
                 timer1.Interval = 10;
                 timer1.Start();
                 btnConnect.Text = "Отключить";
+                isConnected=true;
+                _mInst.ActivateSignal(7);
+                _mInst.ActivateSignal(8);
             }
             
         }
@@ -138,18 +145,65 @@ namespace Mach3Control
             {
                 if (_mInst.GetOEMLed(821))
                 {
-                    if (isMachRun) { return;}
-                    _mInst.LoadRun(label1.Text);
-                    isMachRun = true;
+                    if (!isFerstSelected)
+                    {
+                        isFerstSelected = true;
+                    }
+                    else 
+                    {
+                        if (!isMachRun)
+                        {
+                            _mInst.LoadRun("C:\\Mach3\\GCode\\tableA.tap");
+                            isFerstSelected = false;
+                            isFerstReady = false;
+                            isMachRun = true;
+                            return;
+                        }
+                        isFerstReady = true;
+                    }
                 }
+
                 if (_mInst.GetOEMLed(822))
                 {
-                    if (isMachRun) { return;}
-                    _mInst.LoadRun(label3.Text);
-                    isMachRun = true;
+                    if (!isSecondSelected)
+                    {
+                        isSecondSelected = true;
+                    }
+                    else
+                    {
+                        if (!isMachRun) 
+                        { 
+                            _mInst.LoadRun("C:\\Mach3\\GCode\\tableB.tap");
+                            isSecondSelected=false;
+                            isSecondReady=false;
+                            isMachRun=true;
+                            return;
+                        }
+                        isSecondReady = true;
+                    }
                 }
+
                 if (!_mInst.GetOEMLed(804))
                 {
+                    if (isMachRun)
+                    {
+                        if (isFerstReady)
+                        {
+                            _mInst.LoadRun("C:\\Mach3\\GCode\\tableA.tap");
+                            isFerstSelected = false;
+                            isFerstReady = false;
+                            isMachRun = true;
+                            return;
+                        }
+                        if (isSecondReady)
+                        {
+                            _mInst.LoadRun("C:\\Mach3\\GCode\\tableB.tap");
+                            isSecondSelected = false;
+                            isSecondReady = false;
+                            isMachRun = true;
+                            return;
+                        }
+                    }
                     isMachRun = false;
                 }
             }

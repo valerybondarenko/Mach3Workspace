@@ -10,8 +10,15 @@ namespace Mach3Control
         private System.ComponentModel.IContainer components = null;
         private IMach4 _mach;
         private IMyScriptObject _mInst;
-        private bool isMachRun;
-       
+        private bool isMachRun; //Выполняется программа G-code
+        private bool isConnected; // Установлена связь с Mach3
+
+        private bool isFerstSelected; // Выбрана первая зона обработки
+        private bool isFerstReady; // Первая зона обработки готова
+        
+        private bool isSecondSelected; // Выбрана первая зона обработки
+        private bool isSecondReady; // Вторая зона обработки готова
+
         /// <summary>
         /// Освободить все используемые ресурсы.
         /// </summary>

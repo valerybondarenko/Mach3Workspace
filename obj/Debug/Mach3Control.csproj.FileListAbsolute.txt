@@ -22,4 +22,3 @@ C:\Users\Admin\source\repos\Mach3Workspace\obj\Debug\Interop.Mach4.dll
 C:\Users\Admin\source\repos\Mach3Workspace\obj\Debug\Mach3Control.csproj.ResolveComReference.cache
 C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Interop.Mach4.dll
 C:\Users\green\source\repos\Mach3Control\Mach3Control\obj\Debug\Mach3Control.csproj.ResolveComReference.cache
-C:\Users\Admin\source\repos\Mach3Workspace\obj\Debug\Mach3Control.Form2.resources
